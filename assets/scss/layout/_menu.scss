@@ -1,0 +1,55 @@
+.navigation{
+    &__menu{
+        margin: 0 auto;
+        display: block;
+        padding: 10px;
+        cursor: pointer;
+        span{
+            display: block;
+            width: 40px;
+            height: 4px;
+            background: $smoky-black;
+            margin-top: 7px;
+        }
+    }
+}
+#menuEnlaces {
+    display: none;
+    &__link{
+        display: none;
+        text-align: center;
+        padding: 10px 0;
+        li a{
+            display: block;
+            font-family: $fuente-raleway;
+            font-size: $medium;
+            color: $smoky-black;
+            @include font-weight(bold);
+            padding: 10px 0;
+            text-decoration: none;
+        }
+        li{
+            list-style: none;
+        }
+    }
+    &:checked+#menuEnlaces__link{
+        display: block;
+    }
+}
+label {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px){
+    .navigation__menu{
+        display: none;
+    }
+    #menuEnlaces__link{
+        display: flex;
+        margin: 0;
+        padding: 0 50px;
+        li{
+            padding: 0 20px;
+        }
+    }
+}

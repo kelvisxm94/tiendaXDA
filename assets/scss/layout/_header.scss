@@ -1,0 +1,24 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    
+    &__logo{
+        font-family: $fuente-standard;
+        font-size: $x-large;
+        background-color: $smoky-black;
+        color: $white;
+        @include font-weight(bold);
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .header{
+        align-items: center;
+    }
+}

@@ -1,0 +1,22 @@
+.sectionStore{
+    &__button{
+        border: 2px solid $smoky-black;
+        color: $smoky-black;
+        font-family: $fuente-raleway;
+        font-size: $medium;
+        @include font-weight(bold);
+        display: inline-block;
+        width: 140px;
+        text-align: center;
+        padding: 10px;
+        text-decoration: none;
+        &:hover{
+            border-color: $quick-silver;
+        }
+        &:focus{
+            color: $quick-silver;
+            border-color: $quick-silver;
+        }
+    }
+}
+    

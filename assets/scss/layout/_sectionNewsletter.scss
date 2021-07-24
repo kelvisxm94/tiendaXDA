@@ -1,0 +1,44 @@
+.sectionNewsletter{
+    background-color: $smoky-black;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    width: 90%;
+    position: relative;
+    &__title{
+        font-family: $fuente-standard;
+        color: $white;
+        font-size: $xx-large;
+        @include font-weight(bold);
+        margin: 0;
+    }
+    &__mail{
+        font-family: $fuente-raleway;
+        color: $white;
+        font-size: $medium;
+        @include font-weight(regular);
+        margin: 5px 0;
+    }
+    &__suscribe{
+        margin: 0;
+        position: absolute;
+        right: -51px;
+        bottom: 75px;
+        color: $smoky-black;
+        font-family: $fuente-standard;
+        @include font-weight(bold);
+        font-size: $large;
+        transform: rotate(90deg);
+    }
+}
+
+@media screen and (min-width: 768px){
+    .sectionNewsletter{
+        width: 95%;
+    }
+}
+@media screen and (min-width: 1024px){
+    .sectionNewsletter{
+        width: 45%;
+        height: 200px;
+    }
+}

@@ -1,0 +1,14 @@
+.sectionImagen{
+    &__image{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 1024px){
+    .sectionImagen{
+        width: 50%;
+        float: right;
+        &__image{
+            height: 550px;
+        }
+    }
+}

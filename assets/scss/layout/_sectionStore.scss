@@ -1,0 +1,30 @@
+.sectionStore{
+    padding: 0 20px 20px;
+    &__title{
+        font-family: $fuente-standard;
+        font-size: $xx-large;
+        color: $smoky-black;
+        @include font-weight(bold);
+        margin-bottom: 0;
+    }
+    &__paragraph{
+        font-family: $fuente-raleway;
+        font-size: $small;
+        color: $quick-silver;
+        @include font-weight(regular);
+        line-height: 20px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .sectionStore{
+        padding: 0 80px 60px;
+    }
+}
+@media screen and (min-width: 1024px){
+    .sectionStore{
+        padding: 40px 60px;
+        width: 50%;
+        height: 350px;
+    }
+}
